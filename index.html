@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="menu header__menu">
+            <a href="#" class="header__text link header__text--logo">journey</a>
+            <div class="header__right">
+                <button type="button" class="header__btn" data-count="0">Theme</button>
+                <div class="header__element--icons">
+                    <a href="#" class="header__icon header__icons--calender"></a>
+                    <a href="#" class="header__icon header__icons--forum"></a>
+                    <a href="#" class="header__icon header__icons--compass"></a>
+                </div>
+                <div class="header__element--links">
+                    <span class="header__text">Welcome, </span>
+                    <a class="header__link link link--green" href="#">Log In</a>
+                    <span class="header__text"> or </span>
+                    <a href="#" class="header__link link link--green">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="sign-up">
+            <div class="sign-up__elements">
+                <div class="sign-up__element sign-up__element--instruction">
+                    <div class="sign-up__rectangle"></div>
+                    <p class="sign-up__text">Sign Up</p>
+                    <a href="#" class="sign-up__link link link--green">Log In</a>
+                </div>
+                <div class="sign-up__element sign-up__social-links">
+                    <button class="sign-up__button button button--facebook">
+                        <i class="fa-brands fa-facebook-f button__icon"></i>
+                        <span class="button__text">Facebook</span>
+                    </button>
+                    <button class="sign-up__button button button--google">
+                        <i class="fa-brands fa-google-plus-g button__icon"></i>
+                        <span class="button__text">Google</span>
+                    </button>
+                </div>
+                <div class="sign-up__element sign-up__or-divider">
+                    <span class="sign-up__or">or</span>
+                </div>
+                <form class="sign-up__form">
+                    <input name="first-name" type="text" class="sign-up__input" placeholder="First Name" required />
+                    <input name="last-name" type="text" class="sign-up__input" placeholder="Last Name" required />
+                    <input name="email" type="email" class="sign-up__input" placeholder="Email" required />
+                    <input name="password" type="password" class="sign-up__input" placeholder="Choose Password" required />
+                    <input name="confirmingpassword" type="password" class="sign-up__input" placeholder="Confirm Password"
+                        required />
+                    <div class="sign-up__wrapper">
+                        <input id="t-and-c" type="checkbox" class="sign-up__agreement"  required />
+                        <label for="t-and-c">
+                            Agree our
+                            <a href="#" class="link link--green">Terms</a>
+                            &
+                            <a href="#" class="link link--green">Conditions</a>
+                        </label>
+                    </div>
+                    <button class="button button--submit" type="submit">
+                        Create Account
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scripts/index.js"></script>
+</html>
